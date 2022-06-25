@@ -1,0 +1,63 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  text-align: center;
+  background-color: hsl(210, 36%, 96%);
+}
+
+.counter {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  flex-direction: column;
+}
+
+.count {
+  font-size: 30px;
+}
+
+span {
+  padding: 50px;
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+h1 {
+  color: #102a42;
+  padding-bottom: 20px;
+}
+
+button {
+  border: solid 2px;
+  border-radius: 9px;
+  text-transform: uppercase;
+  padding: 10px;
+  width: fit-content;
+  height: 35px;
+  margin: 10px;
+  letter-spacing: 4px;
+  background-color: white;
+}
+
+.items {
+  word-spacing: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.items :hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
